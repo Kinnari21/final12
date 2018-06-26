@@ -2,19 +2,7 @@
 <html>
 <head>
 <title>Dr. Chuck's Profile Edit</title>
-<!-- bootstrap.php - this is HTML -->
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" 
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
-    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
-    crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" 
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
-    integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" 
-    crossorigin="anonymous">
 
 </head>
 <body>
@@ -23,16 +11,15 @@
 <form method="post" action="edit.php">
 <p>First Name:
 <input type="text" name="first_name" size="60"
-value="Chaka"
+value="kinnari"
 /></p>
 <p>Last Name:
 <input type="text" name="last_name" size="60"
-value="Khan"
+value="kotadiya"
 /></p>
-<p>Email:
+Email:
 <input type="text" name="email" size="30"
-value="mj@yahoo.COM"
-/></p>
+value="kinnari2171998@gmail.com" id="email"/>
 <p>Headline:<br/>
 <input type="text" name="headline" size="80"
 value="booooo"
@@ -42,12 +29,37 @@ value="booooo"
 H</textarea>
 <p>
 <input type="hidden" name="profile_id"
-value="768"
+value="771"
 />
-<input type="submit" value="Save">
+<input type="submit" onclick="return doValidate();" value="Save">
 <input type="submit" name="cancel" value="Cancel">
 </p>
 </form>
+
+<script>
+function doValidate() {
+    console.log('Validating...');
+    try {
+        ad = document.getElementById('email').value;
+ 
+        console.log("Validating addr="+ad+");
+        if (ad == null || ad == "") {
+            alert("fields must be filled out");
+            return false;
+        }
+        if ( ad.indexOf('@') == -1 ) {
+            alert("Invalid email address");
+            return false;
+        }
+        return true;
+    } catch(e) {
+        return false;
+    }
+    return false;
+}
+</script>
+
+
 </div>
 </body>
 </html>

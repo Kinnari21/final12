@@ -22,9 +22,9 @@
 <h1>Deleteing Profile</h1>
 <form method="post" action="delete.php">
 <p>First Name:
-Chaka</p>
+kinnari</p>
 <p>Last Name:
-Khan</p>
+kotadiya</p>
 <input type="hidden" name="profile_id"
 value="768"
 />

@@ -20,7 +20,26 @@
 <body>
 <div class="container">
 <h1>Chuck Severance's Resume Registry</h1>
-<p><a href="login.php">Please Log In</a></p>
+<p><a href="logout.php">logout</a></p>
+<table border="1">
+<tr><th>Name</th><th>Headline</th><th>Action</th></tr>
+<tr><td>
+<a href="view.php?profile_id=771">kinnari kotadiya</a></td>
+<td>sege</td><td>
+<a href="edit.php?profile_id=771">Edit</a> <a href="delete.php?profile_id=771">Delete</a></td></tr>
+
+<tr><td>
+<a href="view.php?profile_id=773">anj dneoo</a></td>
+<td>zezre</td><td>
+<a href="edit.php?profile_id=773">Edit</a> <a href="delete.php?profile_id=771">Delete</a></td></tr>
+<tr><td>
+<a href="view.php?profile_id=776">ncn cnrovo</a></td>
+<td>opkpkp</td><td>
+<a href="edit.php?profile_id=776">Edit</a> <a href="delete.php?profile_id=771">Delete</a></td></tr>
+</table>
+<p><a href="add.php">Add New Entry</a></p>
+
+
 
 <p>
 <b>Note:</b> Your implementation should retain data across multiple
